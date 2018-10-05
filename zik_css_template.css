@@ -25,6 +25,7 @@ body {
 /*    its a copy only because you want it to be in sync with the body plus you now have extra container to customize (.bodywrapper) without having to touch the body*/
     width: 100%;
     margin: auto;
+
 }
 
 .main_footer {

@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Template%25202018%252008%252016/normalize.css" type="text/css">
-    <link rel="stylesheet" href="Template%25202018%252008%252016/normalize.css" type="text/css">
+    <link href="znormalize.css" rel="stylesheet" type="text/css"> 
+    <link href="zik_css_template.css" rel="stylesheet" type="text/css">
     <title>01</title>
 </head>
 <body>
     <h1>Random number between 1 - 6</h1>
     
-<!--    LOOP =  'while' continues run the function uuntil it become false so until 10<10 become false its stops-->
+<!--    LOOP =  'while' continues to run the function until it become false (or even true) so until 10<10 become false its stops-->
     <script>
         function randomN (top) {
             var rnumber = Math.floor (Math.random() * top + 1);
@@ -23,7 +23,7 @@
             counter += 1;
         }    
  
-/* a simple example of a loop while */        
+/* a simple example of a loop 'while' .  you dont need function to use while */        
         var counter = 1;
         while ( counter <= 10 ) {
             console.log(counter);
