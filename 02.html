@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Template%25202018%252008%252016/normalize.css" type="text/css">
+    <link rel="stylesheet" href="Template%25202018%252008%252016/normalize.css" type="text/css">
+    <title>02</title>
+</head>
+<body>
+    
+    <script>
+        var upper = 1000;
+        var randomNumber = getRandomNumber(upper);
+        var guess;
+        var attempts = 0;
+
+        function getRandomNumber(upper) {
+          return Math.floor( Math.random() * upper ) + 1;
+        }
+
+        while( guess !== randomNumber ) {
+          guess = getRandomNumber(upper);
+          attempts+= 1;
+        }
+        document.write("<p>The random number was: " + randomNumber + "</p>");
+        document.write("<p> It took the computer " + attempts + " attempts to get it right.</p>"); 
+
+        
+        var upper = 10000;
+        var rnumber = random(upper);
+        var guess;
+        var attempt = 0;
+        
+        function random(upper) {
+            return Math.floor(Math.random() * upper) + 1;
+        }
+        
+        while (guess !== rnumber) {
+            guess = random(upper);
+            attempt += 1;
+        }
+        document.write(attempt + " is computer attempts");
+
+    
+    </script>
+    
+</body>
+</html>
