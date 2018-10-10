@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="znormalize.css" rel="stylesheet" type="text/css">
     <link href="zik_css_template.css" rel="stylesheet" type="text/css">
-    <title></title>
+    <title>04 while () {}</title>
 </head>
 <body>
+<script>
+  var passwordik = "zxc";
+  var sign_in = prompt("Please the the password?");
+  while (passwordik !== sign_in) {
+    sign_in = prompt("that is incorrect try again!- Hint -zxc");
+  }
+  document.write("yes the password is correct, signing in...")
+  // a small eg on how you can use loop and also !== too.
+  // this is to check password, and if incorrect then try again until true
 
+</script>
 
 </body>
 </html>
