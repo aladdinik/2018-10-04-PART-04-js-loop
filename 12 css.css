@@ -6,7 +6,8 @@
 
 div#jsdiv {
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 	border-radius: 50%;
 }
+/* the inline-block only works because jt is within the <main> in html otherwise it would appear vertically because of flex.D column */

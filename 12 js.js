@@ -4,20 +4,26 @@
 var red;
 var green;
 var blue;
-var rgb;
-var html = "";
+var styleRGB;
+var html = "";   //already set this as string and += to add to it
+
+function randonRGBcolors () {
+	return Math.floor( Math.random() * 256 );
+}
 
 for (var i = 1; i <= 10; i += 1) {
-	red = Math.floor( Math.random() * 256 );
-	green = Math.floor( Math.random() * 256 );
-	blue = Math.floor( Math.random() * 256 );
-	document.write("<div id="jsdiv" style="background-color: rgb(255; 255; 255);
-}
+	red = randonRGBcolors();
+	green = randonRGBcolors();
+	blue = randonRGBcolors();
+	styleRGB = "style='background-color: rgb(" + red + ", " + green + ", " + blue + ");'";
+	html += "<div id='jsdiv' " + styleRGB + "></div>";
+};
+
+document.write(html);
+	/* +\   D.W write in full is  :=    
+	<div id='jsdiv' style='background-color: rgb(red, green, blue);'></div>
 	
+	+\    rgb says 255 colours but ther is a total of 256 because the 0 is added too as it is a colour too, 0-255
 	
-	
-	
-	
-	
-	/* +\    rgb says 255 colours but ther is a total of 256 because the 0 is added too 
-	+\    in the Math.random , you do not need the + 1 because you want to include the 0 at rgb so just type the total unit which is 256 */
+	+\    in the Math.random , you do not need the + 1 because you want to include the 0 in rgb so just type the total unit which is 256 .
+	    and you will never get 256 because Math.random() never reaches 1 so you will never get 256,    the range is 0.00000... - 255.99999..., and with Math.floor it is 0-255*/
