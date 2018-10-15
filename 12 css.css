@@ -1,0 +1,13 @@
+/* +\    IK just testing out the @import as i am using the normalize.css instead of the one in one folder, and it still works the same way.
++\    the div#jsdiv is to test whether you can set id on js file.
+ */
+
+@import url("https://necolas.github.io/normalize.css/8.0.0/normalize.css");
+
+div#jsdiv {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+/* the inline-block only works because jt is within the <main> in html otherwise it would appear vertically because of flex.D column */

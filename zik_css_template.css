@@ -10,7 +10,8 @@
 body {
     display: flex;
     flex-direction: column; 
-    min-height: 100vh;    /* IMPORTANT IK display/f.direction/m.height   is for sticky footer but be sure to add margin-top: auto; on the main footer  */
+    min-height: 100vh;    /* IMPORTANT IK display/f.direction/m.height   is for sticky footer but be sure to add margin-top: auto; on the main footer  
+	+\ also this must be used with header/main/footer otherwise flex.D: column changes the format*/
     margin: 0px;
     padding: 0px;
     line-height: 1.4;
@@ -25,6 +26,7 @@ body {
 /*    its a copy only because you want it to be in sync with the body plus you now have extra container to customize (.bodywrapper) without having to touch the body*/
     width: 100%;
     margin: auto;
+	font-family: ;
 
 }
 
