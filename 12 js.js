@@ -7,7 +7,7 @@ var blue;
 var styleRGB;
 var html = "";   //already set this as string and += to add to it
 
-function randonRGBcolors () {
+function randonRGBcolors() {
 	return Math.floor( Math.random() * 256 );
 }
 
