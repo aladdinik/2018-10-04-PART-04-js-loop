@@ -29,3 +29,8 @@ for (var j = 0; j < 10; j++) {
 +.   remember the the for loop store the information and you use D.W to print it after its finish its loop 
 +.   even D.W is made into a function for reusability. print();
 */
+
+
+for (var i = 2; i <= 24; i += 2) {
+  console.log(i);
+}   // nothing special here just testing
