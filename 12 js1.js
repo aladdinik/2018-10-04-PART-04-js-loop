@@ -1,5 +1,5 @@
 /* +\    i want to produce 10 circles with different colour everytime it refreshes 
-+\   i am also testing whether i can add id to js for it to work  */
++\   i am also testing whether i can add id to js for it to work and it appears to work */
 
 var red;
 var green;
@@ -16,7 +16,7 @@ for (var i = 1; i <= 10; i += 1) {
 	green = randonRGBcolors();
 	blue = randonRGBcolors();
 	styleRGB = "style='background-color: rgb(" + red + ", " + green + ", " + blue + ");'";
-	html += "<div id='jsdiv' " + styleRGB + "></div>";
+	html += "<div id='js1' " + styleRGB + "></div>";
 };
 
 document.write(html);
