@@ -14,7 +14,7 @@ div#js1 {
 
 
 div#js2 {
-	disiplay: inline-block;
+	display: inline-block;
 	width: 70px;
 	height: 70px;
 	border: black 1px solid;
